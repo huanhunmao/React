@@ -1,0 +1,26 @@
+/* Tabs.css */
+.tabButtons {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+  
+  .tabButtons button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    outline: none;
+  }
+  
+  .active {
+    background-color: pink;
+    color: pink;
+  }
+  
+  .tabContent {
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
