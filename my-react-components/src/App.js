@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes,Route } from 'react-router-dom';
+import { useState } from 'react';
 
 import CollapsiblePanel from './components/CollapsiblePanel';
 import Counter from './components/Counter';
@@ -10,11 +11,13 @@ import About from './pages/About';
 import Notification from './components/Notification';
 import SortableTable from './components/SortableTable';
 import Modal from './components/Modal';
-import { useState } from 'react';
 import Tabs from './components/Tabs';
 import Carousel from './components/Carousel';
 import SearchBar from './components/SearchBar';
 import DatePicker from './components/DatePicker';
+import ComplexCalculation from './components/P-useMemo/ComplexCalculation';
+import GetExpensiveValue from './components/P-useMemo/GetExpensiveValue'
+import ChildComponentRender from './components/P-useMemo/ChildComponentRender';
 
 function App() {
     const fields = [{key: 'keys', type: 'text', name:'userName' , placeholder:'请输入xxx', submit: 'submit'}]
@@ -133,6 +136,15 @@ function App() {
 
     <hr/>
     <DatePicker/>
+
+    <hr/>
+    <ComplexCalculation/>
+
+    <hr/>
+    <GetExpensiveValue/>
+
+    <hr/>
+    <ChildComponentRender/>
     </>
   );
 }
