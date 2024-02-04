@@ -1,0 +1,1 @@
+export const DEFAULT_ITEMS = [1, 2, 3, 4, 5]; // 这个一般放在 const.js 内
